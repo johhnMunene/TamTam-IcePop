@@ -3,21 +3,21 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fafafa;  /* Light neutral background */
+    background-color: #fbf8f9; /* Very light pink background */
     line-height: 1.6;
 }
 
 header, footer {
-    background-color: #ff8ba7; /* Soft pink for header and footer */
+    background-color: #ff6f91; /* Bright pink for header and footer */
     color: white;
     text-align: center;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1, footer p {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 nav ul {
@@ -26,49 +26,48 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #ffd1dc; /* Light pink hover */
-    color: #184e77;  /* Deep blue text hover */
+    background-color: #ffd1e3; /* Lighter pink on hover for contrast */
+    color: #2979ff;  /* Bright blue text hover */
 }
 
 main {
-    padding: 30px;
-    background-color: white; /* White background for main content to make it pop */
+    padding: 40px;
+    background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 30px auto;
+    max-width: 900px;
     border-radius: 10px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 h2 {
-    color: #184e77; /* Deep blue headers */
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ff8ba7; /* Pink underline */
-    padding-bottom: 5px;
+    color: #2979ff; /* Bright blue for headers */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6f91; /* Pink underline */
+    padding-bottom: 8px;
 }
 
 blockquote {
-    background-color: #e0f7fa; /* Light shade of blue for blockquotes */
-    border-left: 5px solid #ff8ba7; /* Pink left border */
+    background-color: #e0f0ff; /* Light blue for blockquotes */
+    border-left: 5px solid #ff6f91; /* Pink left border for blockquote */
     margin: 20px 0;
     padding: 15px;
     font-style: italic;
@@ -77,9 +76,9 @@ blockquote {
 
 .cta-buttons .button {
     display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    background-color: #f94144; /* Red for call-to-action buttons */
+    margin: 15px;
+    padding: 15px 30px;
+    background-color: #ff4d4d; /* Bright red for call-to-action */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -88,8 +87,8 @@ blockquote {
 }
 
 .cta-buttons .button:hover {
-    background-color: #295f6e; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #0d47a1; /* Darker blue on hover */
+    transform: scale(1.05);
 }
 
 footer ul {
@@ -101,7 +100,7 @@ footer ul {
 }
 
 footer ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 footer ul li a {
