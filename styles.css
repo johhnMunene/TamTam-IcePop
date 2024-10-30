@@ -3,21 +3,23 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fbf8f9; /* Very light pink background */
+    background-color: #fafafa;  /* Light neutral background */
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll for better design flow */
 }
 
 header, footer {
-    background-color: #ff6f91; /* Bright pink for header and footer */
+    background: linear-gradient(90deg, #ff8ba7, #ff629a); /* Gradient for a dynamic look */
     color: white;
     text-align: center;
     padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow for a floating effect */
 }
 
 header h1, footer p {
     margin: 0;
     font-size: 1.75em;
+    letter-spacing: 1px; /* Slightly increase letter spacing for elegance */
 }
 
 nav ul {
@@ -26,6 +28,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -35,23 +38,28 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 20px; /* More pronounced rounding for buttons */
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #ffd1e3; /* Lighter pink on hover for contrast */
-    color: #2979ff;  /* Bright blue text hover */
+    background-color: #ffd1dc; /* Light pink hover */
+    color: #184e77;  /* Deep blue text hover */
 }
 
 main {
     padding: 40px;
     background-color: white;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
     margin: 30px auto;
     max-width: 900px;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
+}
+
+main:hover {
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
 }
 
 section {
@@ -59,36 +67,48 @@ section {
 }
 
 h2 {
-    color: #2979ff; /* Bright blue for headers */
+    color: #184e77; /* Deep blue headers */
     margin-bottom: 15px;
-    border-bottom: 2px solid #ff6f91; /* Pink underline */
+    border-bottom: 3px solid #ff8ba7; /* Thicker pink underline */
     padding-bottom: 8px;
 }
 
 blockquote {
-    background-color: #e0f0ff; /* Light blue for blockquotes */
-    border-left: 5px solid #ff6f91; /* Pink left border for blockquote */
-    margin: 20px 0;
-    padding: 15px;
+    background-color: #e0f7fa; /* Light shade of blue for blockquotes */
+    border-left: 5px solid #ff8ba7; /* Pink left border */
+    margin: 25px 0;
+    padding: 20px;
     font-style: italic;
     color: #555;
+    position: relative;
+}
+
+blockquote:before {
+    content: '"';
+    font-size: 50px;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #ff8ba7;
 }
 
 .cta-buttons .button {
     display: inline-block;
     margin: 15px;
     padding: 15px 30px;
-    background-color: #ff4d4d; /* Bright red for call-to-action */
+    background: linear-gradient(135deg, #f94144, #ff5e57); /* Gradient red for buttons */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .cta-buttons .button:hover {
-    background-color: #0d47a1; /* Darker blue on hover */
-    transform: scale(1.05);
+    background-color: #295f6e; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 footer ul {
